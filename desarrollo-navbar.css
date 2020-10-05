@@ -1,0 +1,93 @@
+/* body {
+    background-color: rgba(7, 6, 6, 0.404);
+}
+
+header {
+    background-color: rgba(0, 0, 255, 0.925);
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+h1 {
+    float: left;
+    padding: 5px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(255, 255, 200);
+}
+
+li a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(230, 217, 200);
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    display: inline-block; 
+    padding-left: 10px; 
+}
+ul {   
+    text-align: center;
+}
+.contact {
+    padding-left: 55px;
+}
+ */
+ body {
+     background-color: rgb(229, 226, 226);
+ }
+ li, a, .contact{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(22, 20, 20);
+    text-decoration: none;
+ }
+
+ header {
+    display: flex;
+    justify-content: flex-end;/* esto es una clave si logro captar esto me servira de mucho claro que si */
+    align-items: center;
+    padding: 6px 5%;
+    background-color: rgb(134, 212, 212);
+    background-position: center;
+    text-transform: capitalize;
+     box-shadow: 0 1px 30px black;
+ }
+ h1 {
+    cursor: pointer;
+    margin-right: auto;
+    text-transform: uppercase;
+    color: rgb(27, 41, 13);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 8px; 
+}
+
+li a:hover {
+    transition: all 0.3s ease 0s;
+    border-style: solid;
+    border-color: red;
+    border-width: 0 0 3px;
+    width: 100%;
+    padding: 1.3rem;
+}
+li:visited {
+    color: rgb(128, 255, 0);
+}
+.contact {
+    padding: 3px 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background: rgba(126, 252, 0, 0.342);
+}
+.contact:focus {
+    background: rgb(0, 0, 0);
+    color: rgb(126, 252, 0);
+}

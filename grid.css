@@ -1,0 +1,137 @@
+body, html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%;
+    grid-template-rows: 8% 40% 48% auto;
+    grid-template-areas: 
+        "header   header header header"
+        "sidebar  sect1  sect2  sect3"
+        "sidebar  main   main   main"
+        "sidebar footer footer footer" 
+}
+header {
+    grid-area: header;
+    background: rgb(112, 220, 228); 
+
+}
+aside {
+    grid-area: sidebar; 
+    background-color: rgb(6, 114, 255);
+} 
+section:nth-of-type(1) {
+    grid-area: sect1;
+    background-color: #f5fsae; 
+}
+section:nth-of-type(2) {
+    grid-area: sect2;
+    background: coral;
+}
+
+section:nth-of-type(3) {
+    grid-area: sect3;
+    background-color: rgb(75, 226, 75);
+}
+main {
+    grid-area: main;
+    background-color: rgb(155, 225, 248);
+}
+footer {
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(90, 90, 90);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ol > li > a {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+a:hover {
+    background-color: rgb(75, 226, 75);
+    padding: 1rem;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: darkred;
+}
+span {
+    color: red;
+}
+h5 {
+    color: rgb(0, 0, 0);
+    padding-left: 1%;
+    font-weight: bolder;
+    font-size: 3em;
+    cursor: pointer;
+    transform: translateX(0);
+    transition-duration: 0.52s;
+    animation: 1s h1 2;
+}
+
+ul > li > a {
+    padding-bottom: 1em;
+    flex-wrap: nowrap;
+    font-size: 1.5em;
+    color: #f4d5f2;
+}
+
+@keyframes h5 {
+    20%, 40%, 60%, 80% {
+        transform: translateX(-20px);
+    }
+    15%, 35%, 55%, 75% {
+        transform: translateX(20px);
+    }
+
+    20%, 40%, 60%, 80% {
+        transform: translateY(-20px);
+    }
+    10%, 30%, 50%, 70% {
+        transform: translateY(20px);
+    }
+}
+
+
+@media(max-width:768px)  {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 8% 40% 35% 40% auto;
+        grid-template-areas: 
+            "header  header"
+            "sect1   sect2"
+            "sect3   sect3"
+            "main    main"
+            "footer  footer" 
+    }
+}
+@media(max-width:368px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 25% 25% 25% 22% auto;
+        grid-template-areas: 
+            " header "
+            "  sect1 "
+            "  sect2 "
+            "  sect3 "
+            "  main  "
+            "  footer" 
+    }
+    aside {
+        grid-area: none; 
+        background-color: rgba(0, 0, 0, 0.87);
+        display: none;
+    }
+}

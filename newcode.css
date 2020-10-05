@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(103, 197, 199);
+}
+.logo {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img {
+    width: 150%;
+}
+header {
+   background: black
+}
+ul li, a {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 0.1rem 3rem;
+    color: rgb(103, 197, 199);
+}
+ul {
+    width: 90%;
+    text-align: center;
+}
+.portada {
+    border-radius: 50%;
+}
+.baner {
+    max-width: 85%;
+    padding: 1rem;
+    margin: 7px auto;
+    border-radius: 5px;
+    background-color: rgba(242, 255, 255, 0.637);
+    text-align: center;
+} 
+.wrapper {
+    width: 87.4%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video {
+    width: 580px;
+    height: 580px;
+    padding: 5px;
+    flex: 1 1;
+}
+.contenido {
+    border-radius: 5px;
+    background-color: rgba(242, 255, 255, 0.637);
+    padding: 10px 5px;
+    text-align: center;
+    flex: 1 1;
+}

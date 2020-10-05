@@ -1,0 +1,40 @@
+.display-great {
+    display: inherit !important;
+}
+h2 {
+    text-align: center;
+}
+img {
+    width: 150px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+} 
+h3 {
+    text-align: center;
+}
+article {
+    padding: 0 30px;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 94%;
+}
+ul,  li, a {
+    padding-right: 10px;
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+footer {
+    margin: 0;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    color: beige;
+    background: black;
+}

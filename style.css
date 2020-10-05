@@ -1,0 +1,41 @@
+/* Seletor universar */
+* {
+    border: 1px solid blue ;
+    margin: 02px;
+}
+/*selectores de etiquetas*/
+header {
+    background-color: green;
+    color: white;
+}
+article {
+    background-color: coral;
+    font-size: 17px;
+    color: black;
+}
+/*selectores desendentes*/
+article header{
+    background-color: aqua;
+    color: red;
+}
+/*selectores de class*/
+.header {
+    background-color: purple;
+}
+.title-underline {
+    background-color: yellow;
+    color: blue;
+}
+.header .header-wrapper{
+    background-color: aqua;
+}
+.header .header-wrapper * {
+    background-color: green;
+    color: red;
+    border: 2px solid red;
+}
+/*seletores de id*/
+ #aboutme {
+     background-color: purple;
+     color: wheat;
+ }

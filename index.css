@@ -1,0 +1,75 @@
+/* <figure>
+        <img src="portada.jpg" alt="foto de portada">
+    </figure>
+    <audio src="enposib.mp3" type="audio.MP3_128K" controls="controls">
+    </audio>
+    <video src="loco.mp4" type="video.mp4" controls="controls" height="250" width="300">
+    </video> 
+*/
+/* header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background: blue;
+} */
+/*
+.hijo2 {
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+}
+
+ .hijo1 {
+    width: 50px;
+    height: 50px;
+    background: red;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    z-index: 99;
+}
+.hijo3 {
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    z-index: 99;
+} 
+
+
+.oculto {
+    width: 50px;
+    height: 50px;
+    background: rgb(19, 145, 218);
+    display: inline-block;
+    margin: 10px;
+    visibility: hidden;
+}
+ */
+
+.hijo2 {
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .hijo1 {
+    width: 50px;
+    height: 50px;
+    background: red;
+    float: right;
+    margin-right: 10px;
+ }
+ /* si pones un float el otro normal mente el otro deberias de display enline block  */
+ 

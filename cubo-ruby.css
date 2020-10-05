@@ -1,0 +1,125 @@
+
+.contenedor {
+    perspective: 6000px;
+    perspective-origin: 50% 50%;
+}
+.cubo {
+    transform-style: preserve-3d;
+    transform: rotateY(-30deg);
+    margin: 200px auto;
+}
+.cubo, .cubo > div {
+    height: 300px;
+    width: 300px;
+}
+.cara {
+    position: absolute;
+    opacity: 0.9;
+}
+.cubo .cara:nth-child(1) {
+    background-color: rgba(34, 10, 7, 0.89);
+    transform: translateZ(150px);
+    opacity: 1;
+}
+.cubo .cara:nth-child(2) {
+    background-color: rgb(0, 0, 0);
+    transform: translateZ(-150px);
+}
+.cubo .cara:nth-child(3) {
+    background-color: lightcoral;
+    transform: translatex(-150px)
+                rotateY(-90deg);
+}
+.cubo .cara:nth-child(4) {
+    background-color: lawngreen;
+    transform: translateX(150px)
+                rotateY(-90deg);
+}
+.cubo .cara:nth-child(5) {
+    background-color: yellow;
+    transform:  translateY(150px)
+                 rotatex(-90deg);
+}
+.cubo .cara:nth-child(6) {
+    background-color: rgb(204, 0, 255);
+    transform:  translateY(-150px)
+                rotatex(90deg);
+}
+.cubo {
+    animation: 16s giro infinite linear;
+}
+@keyframes giro {
+    0% {
+        transform: rotateX(-45deg) rotatey(0);
+    }
+    50% {
+        transform: rotateX(45deg) rotatey(360deg);
+    }
+    100% {
+        transform: rotateX(-45deg) rotatey(720deg);
+    }
+}
+#piramide {
+    position: relative;
+    margin: 80px auto;
+    height: 500px;
+    width: 100px;
+    transform-style: preserve-3d;
+    transform-origin: 116px 200px 116px;
+    transform: rotateY(30deg);
+    animation: 10s giaro infinite linear;
+}
+#piramide > div {
+    position: absolute;
+    border-style: solid;
+    border-width: 200px 0 200px 346px;
+    transform-origin: 0 0;
+}
+#piramide > div:nth-child(1) {
+    border-color: transparent transparent
+              transparent rgba(0,0,0, 0.8);
+    transform: rotateX(-60deg)
+            rotateY(19.5deg)
+            translateX(-116px)
+            translateY(-200px)
+            translateZ(326px);
+}
+#piramide > div:nth-child(2) {
+    border-color: transparent transparent
+                  transparent #f00;
+    transform:  rotateY(-19.5deg)
+                rotateX(180deg)
+                translateY(-400px);
+}
+#piramide > div:nth-child(3) {
+    border-color: transparent transparent
+                    transparent rgba(0,0,255, 0.4);
+    transform:  rotateY(90deg)
+                    rotateZ(60deg)
+                    rotatex(180deg)
+                    translateY(-400px);
+}
+#piramide > div:nth-child(4) {
+    border-color: transparent transparent
+                    transparent rgba(0,255,0, 0.4);
+    transform:  rotateX(60deg)
+                rotateY(19.5deg); 
+}
+@keyframes giaro {
+     0% {
+         transform: rotatex(0deg) 
+                    rotateY(0deg)
+                    rotatex(0deg);
+     }
+     100% {
+         transform: rotateX(360deg)
+                    rotateY(360deg)
+                    rotateZ(360deg);
+     }
+ }
+
+ .contenedor, #piramide {
+     display: inline-block;
+     padding-left: 200px;
+     padding-right: 200px;
+ }

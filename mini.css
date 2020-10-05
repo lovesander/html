@@ -1,0 +1,27 @@
+.display-mini {
+  display: inherit !important;
+}
+body {
+  font-family: arial sans-serif;
+}
+img {
+  width: 8.5em;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+article {
+  margin: 0 15px;
+}
+h3 {
+  text-align: center;
+}
+h1 {
+  font-size: 1.5em
+}
+li, a {
+  list-style: none;
+  text-decoration: none;
+}

@@ -1,0 +1,166 @@
+body {
+    background-color: rgb(228, 227, 217);
+}
+
+header {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 1px 15px ;
+    
+}
+
+h1 {
+    padding: 5px 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: teal;
+    text-transform: uppercase;
+}
+
+nav, h1, li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav {
+    margin: 11 3px 10px;
+    float: right;
+}
+
+li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+li .contact {
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    background: teal;
+    padding: 5px 20px;
+    margin: 20px;
+}
+
+.contact:hover {
+    background: teal;
+    color:black;
+}
+.let:visited {
+    color: teal;
+}
+.let:link {
+    color: white;
+}
+
+
+.let:hover {
+    color: teal;
+}
+
+.cuerpo {
+    width: 73%;
+    height:500px;
+    margin-top: 1.2%;
+    margin-left: 5%;
+    margin-right: auto;
+    color: rgba(0, 0, 0, 0.979);
+    padding: 5px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+aside {
+    width: 16%;
+    height: 500px;
+    background-color: rgba(0, 128, 128, 0.308);
+    position: relative;
+    float: right;
+    margin: 1.2% 5% auto auto;
+}
+
+@media(max-width:828px) {
+    .cuerpo {
+        width: 94%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    aside {
+        width: 94%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:706px) {
+    .cuerpo {
+        width: 96%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    aside {
+        width: 96%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:619px) {
+    .cuerpo {
+        width: 96%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    aside {
+        width: 96%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60px;
+    }
+}
+
+@media(max-width:508px) {
+    .cuerpo {
+        width: 96%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    aside {
+        width: 96%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60px;
+    }
+}
+
+@media(max-width:390px) {
+    .cuerpo {
+        width: 96%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    aside {
+        width: 96%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60px;
+    }
+}

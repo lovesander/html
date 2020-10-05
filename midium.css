@@ -1,0 +1,44 @@
+.display-midium {
+    display: inherit !important;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+select .display-mini {
+    font-size: 1.2em;
+}
+img {
+    width: 150px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+}
+h3 {
+    text-align: center;
+}
+article {
+    padding: 0 30px;
+}
+#wrapper, footer {
+    margin: 0 auto;
+    width: 94%;
+    clear: both;
+}
+ul,  li, a {
+    padding-right: 10px;
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+@media (max-width: 630px) {
+    #wrapper, footer {
+        margin: 0 auto;
+        width: 100%;
+        clear: both;
+    }
+
+}

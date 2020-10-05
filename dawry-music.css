@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    justify-content: space-around;/* esto es una clave si logro captar esto me servira de mucho claro que si */
+    align-items: center;
+    padding: 0;
+    background-color: #fff;
+    background-position: center;
+    text-transform: capitalize;
+     box-shadow: 0 1px 30px black;
+ }
+.navbar {
+    padding: 0 1rem;
+}
+.button-buscar{
+    margin-left: auto;
+}
+.contenedor {
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+}
+.button-menu {
+    padding-right: 25px;
+}
+button {
+    background: none;
+    color: white;
+    border: none;
+    padding-right: 15px;
+}
+.button-menu img, 
+.button-buscar img{
+    font-size: 1.9rem;
+    padding: 0 0.8rem;
+    background: none;
+}
+.logo img {
+  width: 130px;
+  align-items: center;
+}
+/* la otra seccion */
+/* audio {
+    margin-top: 150px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}  */
+.destacado {
+    background-color: #000000e5;
+}
+.dento {
+    text-align: center;
+}
+video {
+    width: 96%;
+}
+/* img, .imagen {
+    width: 41%;
+    height: auto;
+} */
+
+
